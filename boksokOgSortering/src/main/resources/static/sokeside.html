@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="simple.css">
+    <title>Søk på forfatter</title>
+</head>
+<body>
+<h4>Søk etter bøker på forfatter</h4>
+
+
+<form action="noenboker" method="get">
+
+    <p>søk etter forfatter</p>
+    <input type="text" name="forfatter">
+
+    <p>sorter på tittel: <input type="radio" name="sort" value="onTitle" checked> sorter på år: <input type="radio" name="sort" value="onYear">
+    </p>
+    <p>vleg filter på genger:</p>
+    <p>roman: <input type="checkbox" name="filter" value="Roman"></p>
+    <p>drama: <input type="checkbox" name="filter" value="Drama"></p>
+    <p>romanse: <input type="checkbox" name="filter" value="Romanse"></p>
+
+    <p><input type="submit" value="Søk"></p>
+</form>
+
+
+</body>
+</html>
+
