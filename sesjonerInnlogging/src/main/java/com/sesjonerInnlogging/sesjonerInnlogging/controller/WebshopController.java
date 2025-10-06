@@ -1,6 +1,7 @@
 package com.sesjonerInnlogging.sesjonerInnlogging.controller;
 
 import java.util.List;
+import java.util.Map;
 
 import com.sesjonerInnlogging.sesjonerInnlogging.model.Cart;
 import com.sesjonerInnlogging.sesjonerInnlogging.model.CartItem;
@@ -37,19 +38,40 @@ public class WebshopController {
     @PostMapping
     public String leggVarerIHandlekurv(
             @RequestParam(name="vare", required=false) List<String> varer,
-            HttpSession session, RedirectAttributes ra) {
+            HttpSession session,
+            RedirectAttributes ra) {
 
+        // Sjekk om brukeren er innlogget
         if (!LoginUtil.erBrukerInnlogget(session)) {
             ra.addFlashAttribute("redirectMessage", "Du må være innlogget ...");
             return "redirect:login";
         }
 
+        // Hent eller opprett handlekurv
         Cart cart = (Cart) session.getAttribute("cart");
-        if (varer != null && varer.contains("bukse")) {
-            cart.addItem(new CartItem("Bukse", 699));
+        if (cart == null) {
+            cart = new Cart();
+            session.setAttribute("cart", cart);
         }
-        //...
 
+        // Definer en "katalog" med tilgjengelige varer
+        Map<String, CartItem> katalog = Map.of(
+                "bukse",  new CartItem("Bukse", 699),
+                "genser", new CartItem("Genser", 499),
+                "jakke",  new CartItem("Jakke", 999)
+        );
+
+        // Legg til varer som brukeren har valgt
+        if (varer != null) {
+            for (String valgtVare : varer) {
+                CartItem item = katalog.get(valgtVare);
+                if (item != null) {
+                    cart.addItem(new CartItem(item.getName(), item.getPrice()));
+                }
+            }
+        }
+
+        // Etter at varer er lagt i handlekurv, redirect til webshop
         return "redirect:webshop";
     }
 }
