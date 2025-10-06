@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="css/simple.css">
+    <link rel="stylesheet" href="simple.css">
 </head>
 <body>
 <p style="color:red">${redirectMessage}</p>

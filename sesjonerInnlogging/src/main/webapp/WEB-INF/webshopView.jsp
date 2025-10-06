@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>WebShop</title>
-    <link rel="stylesheet" href="css/simple.css">
+    <link rel="stylesheet" href="simple.css">
 </head>
 
 <body>
@@ -28,6 +28,7 @@
     <fieldset><legend>Handle</legend>
         <input type="checkbox" name="vare" value="bukse" />Bukse<br/>
         <input type="checkbox" name="vare" value="genser" />Genser<br/>
+        <input type="checkbox" name="vare" value="jakke" />jakke<br/>
         <p><input type="submit" value="Legg i handlekurv" /></p>
     </fieldset>
 </form>
