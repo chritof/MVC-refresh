@@ -71,7 +71,7 @@ public class MyController {
 
 
     //FY - Denne burde vært POST!
-    @PostMapping(value = "/nyavd", produces = "text/plain")
+    @GetMapping(value = "/nyavd", produces = "text/plain")
     @ResponseBody
     public String nyavd(@RequestParam String navn) {
         Avdeling ny = new Avdeling();
