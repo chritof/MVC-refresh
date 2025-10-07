@@ -38,4 +38,12 @@ public class ButikkController {
         }
         return "redirect:/butikk";
     }
+
+    @PostMapping("/fjerne")
+    public String fjerne(HttpSession session, @RequestParam int vareid) {
+        Handlekurv handlekurv = (Handlekurv) session.getAttribute("handlekurv");
+        handlekurv.fjernOrdrelinje(vareid);
+        return "redirect:/butikk";
+    }
+
 }

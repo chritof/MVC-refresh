@@ -37,7 +37,7 @@
 
 <h2>Din handlekurv</h2>
 
-<c:if test="${sessionScope.handlekurv.tom}">
+<c:if test="${sessionScope.handleurv.tom}">
     <p><i>Handlekurven er tom</i></p>
 </c:if>
 
