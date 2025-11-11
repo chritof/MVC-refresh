@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/ansatteSystem/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/avdelingCRUDRepo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/beansScopes/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bokliste/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/boksokOgSortering/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/buttonsNettbutikk/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cookies/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/passord/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/personRegskjema/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/postRedirectGet/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/semesterRegistrering/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sesjonerInnlogging/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/validereFodselsaar/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/validerePerson/src/main/java" charset="UTF-8" />
+  </component>
+</project>
