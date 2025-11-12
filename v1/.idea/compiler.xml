@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="validerePerson" />
+        <module name="postRedirectGet" />
+        <module name="validereFodselsaar" />
+        <module name="bokliste" />
+        <module name="beansScopes" />
+        <module name="avdelingCRUDRepo2" />
+        <module name="avdelingCRUDRepo" />
+        <module name="cookies" />
+        <module name="semesterRegistrering" />
+        <module name="personRegskjema" />
+        <module name="boksokOgSortering" />
+        <module name="ansatteSystem" />
+        <module name="sesjonerInnlogging" />
+        <module name="passord" />
+        <module name="buttonsNettbutikk" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ansatteSystem" options="-parameters" />
+      <module name="avdelingCRUDRepo" options="-parameters" />
+      <module name="avdelingCRUDRepo2" options="-parameters" />
+      <module name="beansScopes" options="-parameters" />
+      <module name="bokliste" options="-parameters" />
+      <module name="boksokOgSortering" options="-parameters" />
+      <module name="buttonsNettbutikk" options="-parameters" />
+      <module name="cookies" options="-parameters" />
+      <module name="passord" options="-parameters" />
+      <module name="personRegskjema" options="-parameters" />
+      <module name="postRedirectGet" options="-parameters" />
+      <module name="semesterRegistrering" options="-parameters" />
+      <module name="sesjonerInnlogging" options="-parameters" />
+      <module name="validereFodselsaar" options="-parameters" />
+      <module name="validerePerson" options="-parameters" />
+    </option>
+  </component>
+</project>

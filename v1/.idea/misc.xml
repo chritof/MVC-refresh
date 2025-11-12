@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="MavenRunner">
-    <option name="jreName" value="21" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/cookies/pom.xml" />
+        <option value="$PROJECT_DIR$/passord/pom.xml" />
+        <option value="$PROJECT_DIR$/bokliste/pom.xml" />
+        <option value="$PROJECT_DIR$/beansScopes/pom.xml" />
+        <option value="$PROJECT_DIR$/ansatteSystem/pom.xml" />
+        <option value="$PROJECT_DIR$/validerePerson/pom.xml" />
+        <option value="$PROJECT_DIR$/personRegskjema/pom.xml" />
+        <option value="$PROJECT_DIR$/postRedirectGet/pom.xml" />
+        <option value="$PROJECT_DIR$/avdelingCRUDRepo/pom.xml" />
+        <option value="$PROJECT_DIR$/avdelingCRUDRepo2/pom.xml" />
+        <option value="$PROJECT_DIR$/boksokOgSortering/pom.xml" />
+        <option value="$PROJECT_DIR$/buttonsNettbutikk/pom.xml" />
+        <option value="$PROJECT_DIR$/sesjonerInnlogging/pom.xml" />
+        <option value="$PROJECT_DIR$/validereFodselsaar/pom.xml" />
+        <option value="$PROJECT_DIR$/semesterRegistrering/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
