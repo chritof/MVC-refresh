@@ -5,12 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Registrer forfatter</title>
-    <link rel="stylesheet" href="<c:url value='/simple.css'/>">
+    <link rel="stylesheet" href="simple.css">
 </head>
 <body>
 <h1>Registrer en forfatter</h1>
 
-<form method="POST" action="<c:url value='/registrerforfatter'/>">
+<form method="POST" action="/registrerforfatter">
     <label for="fname">Fornavn:</label>
     <input type="text" id="fname" name="fname" required />
 

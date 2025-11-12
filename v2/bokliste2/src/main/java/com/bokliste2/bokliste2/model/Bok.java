@@ -67,4 +67,9 @@ public class Bok {
     public void setAuthors(Set<Forfatter> authors) {
         this.authors = authors;
     }
+
+    @Override
+    public String toString() {
+        return "[" + title + " (" + yearOfRelease + ")]";
+    }
 }
