@@ -4,23 +4,21 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>alle boker</title>
-    <link rel="stylesheet" href="simple.css">
-    <link rel="icon" type="image/jpeg" href="/favicon.jpg"></head>
+    <title>Registrer forfatter</title>
+    <link rel="stylesheet" href="<c:url value='/simple.css'/>">
+</head>
 <body>
-<h1>Registrer en Forfatter:</h1>
+<h1>Registrer en forfatter</h1>
 
-<form method="POST">
+<form method="POST" action="<c:url value='/registrerforfatter'/>">
+    <label for="fname">Fornavn:</label>
+    <input type="text" id="fname" name="fname" required />
 
-    <fieldset>fyll inn</fieldset>
-    <label for="fffname">First name:</label>
-    <input type="text" id="fffname" name="fname" placeholder="First name" />
-
-    <label for="lllname">Last name:</label>
-    <input type="text" id="lllname" name="lname" placeholder="Last name" />
+    <label for="lname">Etternavn:</label>
+    <input type="text" id="lname" name="lname" required />
 
     <fieldset>
-        <legend>Velg bøker</legend>
+        <legend>Velg bøker (flere valg mulig)</legend>
         <c:forEach var="bok" items="${bokList}">
             <label>
                 <input type="checkbox" name="bokIds" value="${bok.id}">
@@ -29,9 +27,7 @@
         </c:forEach>
     </fieldset>
 
-    <input type="submit" value="Submit" />
-
+    <input type="submit" value="Lagre" />
 </form>
-
 </body>
 </html>
